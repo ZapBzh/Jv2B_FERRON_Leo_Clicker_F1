@@ -19,10 +19,7 @@ public class raceManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void addTrophy()
-    {
-        GameManager.trophyNumber += 1;
-    }
+    
 
     public void upgradeSpeed()
     {
@@ -48,7 +45,7 @@ public class raceManager : MonoBehaviour
 
         if(speed >= 300){
            SceneManager.LoadScene("mainScene");
-           //addTrophy;
+           GameManager.trophyNumber += 1;
         }   
     }
 
